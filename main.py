@@ -1,16 +1,26 @@
-def main():
-    s = input()
-    indicies = list(map(int, input().split()))
-    ##################################################
-    # Code your program here
-    ##################################################
-    # You should use the variable name "result" to save the result string
+def encrypt(strval, indices):
+    """
+    ########################################
+    Code Your Program here
+    ########################################
+    """
 
-    ##################################################
-    # DO NOT Delete the return statement
-    print(result)
-    return result
-##
+
+def main():
+    strval = 'Python'
+    indices = [1, 2, 3, 4, 5, 0]
+    ret = encrypt(strval, indices)
+    print(f'Your return value: {ret}')
+
+    strval = 'Python'
+    indices = [3, 4, 1, 2, 5, 0]
+    ret = encrypt(strval, indices)
+    print(f'Your return value: {ret}')
+
+    strval = 'Python'
+    indices = [0, 5, 1, 2, 3, 4]
+    ret = encrypt(strval, indices)
+    print(f'Your return value: {ret}')
 
 
 if __name__ == '__main__':
